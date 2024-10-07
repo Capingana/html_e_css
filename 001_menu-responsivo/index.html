@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Menu-Responsivo</title>
+</head>
+<body onresize="mudarTamanho()">
+    <header class="header-page">
+        <div class="logo"><img src="./src/img/logo.png" alt="Logo"></div>
+        <div class="hamburguer-div">
+            <img src="./src/img/menu.png" alt="" id="menu-hamburguer" onclick="showMenu()">
+        </div>
+
+        <menu id="ListMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Projectos</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <script src="./src/js/scripts.js"></script>
+</body>
+</html>
