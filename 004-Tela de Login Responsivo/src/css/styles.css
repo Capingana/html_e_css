@@ -58,7 +58,7 @@ section#login > div#formulario {
 
 /* medias */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:992px) {
   /* tablet */
 body{
     background-image: linear-gradient(to top,#49a09d,#5f2c82);
@@ -78,22 +78,32 @@ body{
   }
 }
 
-@media screen and (min-width:992px){
+div#formulario>h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#formulario>p{
+    font-size: 0.8em;
+}
+/* Aplicando as medias */
+@media screen and (min-width:992px) {
     /* telas grandes */
     body{
-        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+        background-image: linear-gradient(to top,#49a09d,#3d1657);
     }
     section#login {
         width: 990px;
       }
     
       section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
       }
       section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
       }
 }
