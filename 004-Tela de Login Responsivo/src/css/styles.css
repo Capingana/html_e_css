@@ -30,7 +30,7 @@ main.container {
 section#login {
   background-color: white;
   width: 300px;
-  height: 500px;
+  height: 515px;
   border-radius: 20px;
   position: absolute;
   top: 50%;
@@ -38,8 +38,8 @@ section#login {
   transform: translate(-50%, -50%);
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
-  transition: width 1s ,height 1s;
-  transition-timing-function:ease ;
+  transition: width 1s, height 1s;
+  transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -58,11 +58,11 @@ section#login > div#formulario {
 
 /* medias */
 
-@media screen and (min-width: 768px) and (max-width:992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   /* tablet */
-body{
-    background-image: linear-gradient(to top,#49a09d,#5f2c82);
-}
+  body {
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+  }
   section#login {
     width: 90vw;
   }
@@ -78,32 +78,81 @@ body{
   }
 }
 
-div#formulario>h1{
-    text-align: center;
-    margin-bottom: 10px;
-
+div#formulario > h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-div#formulario>p{
-    font-size: 0.8em;
+div#formulario > p {
+  font-size: 0.8em;
+}
+
+form>div.campo{
+    background-color: #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form label{
+    display: none;
+}
+form > input[type="submit"] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #49a09d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form > input[type="submit"]:hover {
+  background-color: #1d504e;
+}
+
+form > a.botao {
+  display: block;
+  margin: 5px 0px;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid teal;
+  transition: .5s;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(5, 34, 34);
+  padding-top: 5px;
+}
+form > a.botao:hover {
+    background-color: #17615e;
+}
+form > a.botao > i {
+  font-size: 0.8em;
 }
 /* Aplicando as medias */
-@media screen and (min-width:992px) {
-    /* telas grandes */
-    body{
-        background-image: linear-gradient(to top,#49a09d,#3d1657);
-    }
-    section#login {
-        width: 990px;
-      }
-    
-      section#login > div#imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
-      }
-      section#login > div#formulario {
-        float: left;
-        width: 50%;
-      }
+@media screen and (min-width: 992px) {
+  /* telas grandes */
+  body {
+    background-image: linear-gradient(to top, #49a09d, #3d1657);
+  }
+  section#login {
+    width: 990px;
+  }
+
+  section#login > div#imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+  section#login > div#formulario {
+    float: left;
+    width: 50%;
+  }
 }
